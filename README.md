@@ -45,6 +45,6 @@ Once all the datasets containing the generated audio according to the different 
 
 ### Subjective Test Implementation
 For the subjective test, 10 captions representing 10 different categories of sounds were selected. The file [extract_captions_for_category.ipynb](codes_for_the_captions_selection/code_captions_selection_for_subjective_test/extract_captions_for_category.py) was used for the category-based selection, from which 10 captions were extracted following our evaluation. The code for the subjective test conducted using MUSHRA is found in the file [sound_generation_test.yaml](mushra_configs_folder/configs/sound_generation_test.yaml), and the respective audio files can be found in the folder [resources/audio](mushra_configs_folder/configs/resources/audio). 
-Our subjective test results are available and can be found within the ['subjective_test_results'](results/subjective_test_results.xlsx) and ['subjective_test_results_percentages'](results/subjective_test_results_percentages.xlsx) files.
+Our subjective test results are available and can be found inside the ['subjective_test_results'](results/subjective_test_results.xlsx) and ['subjective_test_results_percentages'](results/subjective_test_results_percentages.xlsx) files.
 
 
