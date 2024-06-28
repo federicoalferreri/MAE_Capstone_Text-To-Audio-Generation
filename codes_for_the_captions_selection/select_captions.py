@@ -2,7 +2,7 @@ import pandas as pd
 from collections import Counter
 import re
 
-word_freq_df = pd.read_excel('word_freq_final.xlsx')
+word_freq_df = pd.read_excel('.../word_freq_final.xlsx') # path words frequencies file
 
 word_freq_dict = dict(zip(word_freq_df['Parola'], word_freq_df['Frequenza']))
 print(word_freq_dict)
