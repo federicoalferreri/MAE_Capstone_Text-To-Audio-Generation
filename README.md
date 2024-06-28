@@ -15,7 +15,7 @@ Advancements in the field of Artificial Intelligence Generated Content (AIGC) ha
 ## Table of Contents
 - [Abstract](#abstract)
 - [GitHub page content](#project-implementation)
-- [How to replicate the experiment](#)
+- [How to replicate the experiment](#how-to-replicate)
 
 ## Project Implementation
 
