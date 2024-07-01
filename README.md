@@ -41,6 +41,7 @@ For Audiogen, the default parameters were used except for the duration of the au
 - Conversion of the model weights and computations to float16 (half) precision, which improves inference time and GPU memory with an imperceptible change to generation quality.
 - Choosing a more efficient scheduler, specifically `DPMSolverMultistepScheduler`, which requires only 20-25 inference steps to achieve similar results. We set the inference steps to 20, the audio duration to 10 seconds, and the seed to 0 for reproducibility to allow us to tweak our prompts and observe the effect that they have on the generations by fixing the starting latents in the LDM model.
 
+### FAD Evaluation
 Once all the datasets containing the generated audio according to the different generative models used are obtained, the FAD can be calculated using the Clotho dataset for evaluation. To perform the calculation, upload all the datasets to Google Drive, run the script [fad_google_colab.ipynb](fad_google_colab.ipynb) on Google Colab, selecting the GPU for computation, and replace the respective dataset paths. To use the VGGish model for evaluation, set `model_name="vggish"`. To use the CLAP model, first perform the resampling of the audio files using the notebook [resampling.ipynb](codes_audio_modification_for_subjective_and_fad_clap_evaluation/resampling.ipynb) and then set the sample rate to 48kHz and `model_name="clap"` for the FAD calculation. Our results can be found in the file [FAD_results.xlsx](results/FAD_results.xlsx).
 
 ### Subjective Test Implementation
